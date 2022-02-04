@@ -1,29 +1,40 @@
 #include <stdio.h>
+
 /**
- * main - a simple program that outputs 0-9 separated by commas
+ * main - a simple program that outputs unordered
+ * combinations of two digit integers without duplicates
  *
  * Return: 0 on success
  */
 int main(void)
 {
+	int ifirst;
 	int i;
+	int jfirst;
 	int j;
-	int k;
 
-	for (i = 48; i < 56; i++)
+	for (ifirst = 48; ifirst < 58; ifirst++)
 	{
-		for (j = i + 1; j < 57; j++)
+		for (i = 48; i < 58; i++)
 		{
-			for (k = j + 1; k < 58; k++)
+			j = i + 1;
+			jfirst = ifirst;
+			for (; jfirst < 58; jfirst++)
 			{
-				putchar(i);
-				putchar(j);
-				putchar(k);
-				if (i != 55 || j != 56 || k != 57)
+				for (; j < 58; j++)
 				{
-					putchar(',');
+					putchar(ifirst);
+					putchar(i);
 					putchar(' ');
+					putchar(jfirst);
+					putchar(j);
+					if (ifirst != 57 || jfirst != 57 || i != 56 || j != 57)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
+				j = 48;
 			}
 		}
 	}
