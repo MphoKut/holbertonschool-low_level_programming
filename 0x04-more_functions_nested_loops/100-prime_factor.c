@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main - finds and prints the largest prime factor
- * Return: 0 (Success)
+ * main - entry block
+ * @void: no argument
+ * Return: 0
  */
 int main(void)
 {
@@ -9,7 +10,7 @@ int main(void)
 
 	for (i = 2; i <= number; i++)
 	{
-		if (number % 1 == 0)
+		if (number % i == 0)
 		{
 			number = number / i;
 			i--;
