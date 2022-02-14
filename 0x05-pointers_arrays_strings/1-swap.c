@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- *swap_int - swap numbers function
- *@a: integer
- *@b: integer
+ *_strlen - count the length of a string
+ *@s: string
  *
- *Return: nothing
+ *Return: the value of the length i
  */
 
-void swap_int(int *a, int *b)
+int _strlen(char *s)
 {
-int temp;
+int i = 0;
 
-temp = *a;
-*a = *b;
-*b = temp;
+while (s[i])
+i++;
+
+return (i);
 }
