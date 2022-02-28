@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strncpy - copies a string up to n
  * @dest: Destination of the pointer to the string
