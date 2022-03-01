@@ -10,11 +10,7 @@
 int _strncmp(char *s1, char *s2, unsigned int b)
 {
 	unsigned int i;
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 4867b5fc5e27eb5b93017e10bb86dbd3684dc5bf
 	for (i = 0; i <= b && *s1 == *s2 && *s1 != '\0' && *s2 != '\0'; i++)
 	{
 		s1++;
